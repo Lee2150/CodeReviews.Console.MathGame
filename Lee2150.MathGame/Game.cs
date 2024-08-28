@@ -4,15 +4,15 @@
     {
         List<string> GameTypes;
 
-        Random Random = new Random();
+        public Random Random = new Random();
 
         string GameType;
 
-        int GameNumber = 0;
+        int GameNumber;
 
         List<PreviousGames> PreviousGames = new List<PreviousGames>();
 
-        public Game()
+        public void GameStart()
         {
             Console.Write("Welcome to Math Game.");
             Thread.Sleep(3000);
